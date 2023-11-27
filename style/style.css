@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+div#body-text {
+    display: flex;
+    font-family: 'Trebuchet MS';
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+h1 {
+    color: #2f6a87;
+    font-family: 'Trebuchet MS', 'Luecida Sans Unicode', 'Lucieda Grande', 'Lucidea23ns', Arial, sans-serif;
+    margin-left: -23px;
+}
+
+body {
+    background:white;
+
+
+}
+
+input#txtn1 {
+    margin-bottom: 30px;
+    border-color: #2f6a87;
+    border-width: 1px;
+    width: 300px;
+    height: 30px;
+
+}
+
+input#txtn2 {
+    margin-top: px;
+    border-color: #2f6a87;
+    border-width: 1px;
+    width: 300px;
+    height: 30px;
+
+}
+
+p#peso {
+    font: normal 20px 'Trebuchet MS';
+    margin-bottom: -10px;
+    color: #6eb2cc;
+    margin-left: -95px;
+
+}
+
+h2#alt {
+    font: normal 20px 'Trebuchet MS';
+    margin-bottom: -10px;
+    color: #6eb2cc;
+    margin-left: -58px;
+
+
+}
+
+div#imc {
+    text-align: center;
+    display: block;
+
+}
+
+input#soma {
+    transition: 0.3s;
+    margin-top: 10px;
+    color: #ffffff;
+    font: bold 18px 'Trebuchet MS';
+    background-color: #2f6a87;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+input#soma:hover {
+    background: #064666;
+    transform: scale(1.1);
+}
+
+
+div#res {
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    color: #2f6a87;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    display: inline-block;
+
+
+
+}
+
+input#limpa {
+    transition: 0.3s;
+    margin-left: 115px;
+    margin-top: 10px;
+    color: #ffffff;
+    font: bold 18px 'Trebuchet MS';
+    background-color: #e42b1e;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box
+}
+
+input#limpa:hover {
+    background: #ff0000;
+    transform: scale(1.1);
+}
+
+h2#categoria {
+    font: normal 25px 'Trebuchet MS';
+    color: #2f6a87;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: teal;
+    font-family: "Montserrat", sans-serif;
+}
+
+#logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#nav-links li {
+    list-style: none;
+}
+
+#nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+#nav-links a:hover:not(.active) {
+    background-color: lightseagreen;
+}
+
+#nav-links li a.active {
+    background-color: #4caf50;
+}

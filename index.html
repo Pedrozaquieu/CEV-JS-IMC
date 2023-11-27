@@ -1,141 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de IMC</title>
-    <style>
-        h1{
-            color: #2f6a87;
-            font-family: 'Trebuchet MS', 'Luecida Sans Unicode', 'Lucieda Grande', 'Lucidea23ns', Arial, sans-serif;
-            margin-left: -23px;
-        }        
-        body{
-            background: #e6e5e5;
-            
-            
-        }
-        input#txtn1{
-            margin-bottom: 30px;    
-            border-color: #2f6a87;
-            border-width: 1px;
-            width: 300px;
-            height: 30px;
+    <title>IMC</title>
+    <link rel="stylesheet" href="style/style.css">
 
-        }
-        input#txtn2{
-            margin-top: px;
-            border-color: #2f6a87;
-            border-width: 1px;
-            width: 300px;
-            height: 30px;
-
-        }
-        p#peso{
-            font: normal 20px 'Trebuchet MS' ;
-
-            margin-bottom: -10px;
-            color: #6eb2cc;
-            margin-left: -95px;
-            
-        }
-        h2#alt{
-            font: normal 20px 'Trebuchet MS' ;
-            margin-bottom: -10px;
-            color: #6eb2cc;
-            margin-left: -58px;
-            
-
-        }
-        div#tudo{
-            text-align: center;
-            display: block;
-            
-        }
-        input#soma{
-            margin-top: 10px;
-            color: #ffffff;
-            font: bold 18px 'Trebuchet MS';
-            background-color: #2f6a87;
-            width: 100px ;
-            height: 50px;
-            border: 1px solid black;
-            display: inline-block;
-            box-sizing:border-box ;
-            margin
-            
-
-        }
-        div#res{     
-            font-weight: bold;
-            margin-top: 50px;
-            text-align: center;       
-            margin-left:;
-            color: #2f6a87; 
-            font-family: 'Trebuchet MS', sans-serif;
-            font-size: 80px;
-            
-            
-            
-        }
-        input#limpa{
-            margin-left: 115px;
-            margin-top: 10px;
-            color: #ffffff;
-            font: bold 18px 'Trebuchet MS';
-            background-color: #E01627;
-            width: 100px ;
-            height: 50px;
-            border: 1px solid black;
-            display: inline-block;
-            box-sizing:border-box 
-            
-
-
-        }
-        
-        
-
-
-    </style>
 </head>
+
 <body>
-    <div id="tudo">
-        <fomr>
-    <h1>DESCUBRA SEU IMC:</h1>
-    <p id="peso">Escreva seu peso em KG</p></br>
-   <input type="number" name="txtn1" id="txtn1"> </br>
+    <nav>
 
-   <h2 id="alt">Escreva sua altura (Ex:1,72)</h2></br>
-    <input type="number" name="txtn2" id="txtn2"></br>
+        <div id="logo">
+            <h4>PEDRO</h4>
+        </div>
 
-    <input type="button" value="calcular" onclick="somar()" id="soma">
-       
-    <input type="button" value="limpar" onclick="limpar()" id="limpa">
-    <div id="res"><h2 id="resul"></h2></div></br>
-</fomr>
-</div>
+        <ul id="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a id="active" href="#">Calculadora</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
 
-    <script>
-        function somar(){
-            var tn1 = document.getElementById('txtn1')
-            var tn2 = document.getElementById('txtn2')
-            var res = document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 / (n2**2)
-            res.innerHTML = `<strong>${s.toFixed(1)}<strong>`
+    </nav>
 
-        }
-        function limpar(){
-            document.getElementById('txtn1').value='';
-            document.getElementById('txtn2').value='';
-            res.innerHTML = ''
+    <div id="body-text">
+        <h1></h1>
+    </div>
 
-        }
-       
 
-    </script>
+
+    <div id="imc">
+        <h1>DESCUBRA SEU IMC:</h1>
+        <p id="peso">Escreva seu peso em KG</p></br>
+        <input type="number" name="txtn1" id="txtn1"> </br>
+
+        <h2 id="alt">Escreva sua altura (Ex:1,72)</h2></br>
+        <input type="number" name="txtn2" id="txtn2"></br>
+
+        <input type="button" value="calcular" onclick="somar()" id="soma">
+
+        <input type="button" value="limpar" onclick="limpar()" id="limpa"><br>
+        <h2 id="categoria"></h2>
+        <div id="res">
+            <h2 id="resul"></h2>
+        </div></br>
+
+
+    </div>
+    <script src="js/setup.js"></script>
 
 </body>
+
 </html>
