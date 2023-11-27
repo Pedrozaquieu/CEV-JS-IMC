@@ -10,28 +10,31 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="menu">
 
         <div id="logo">
             <h4>PEDRO</h4>
         </div>
 
         <ul id="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Artigos</a></li>
-            <li><a id="active" href="#">Calculadora</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#body-text">Artigos</a></li>
+            <li><a id="active" href="#imc">Calculadora</a></li>
+            <li><a href="#rodape">Contato</a></li>
         </ul>
 
     </nav>
 
-    <div id="body-text">
-        <h1></h1>
-    </div>
+    <!-- <div id="body-text">
+        <img id="imagem-imc" src="img/imc-img.png" alt="imagem descritiva de diferentes corpos e seus IMCs">
+        <h2 id="texto-imagem">Descobra o que é e qual seu IMC</h2>
+    </div> -->
 
 
 
     <div id="imc">
+        <h1> </h1></br>
+        <h1></h1></br>
         <h1>DESCUBRA SEU IMC:</h1>
         <p id="peso">Escreva seu peso em KG</p></br>
         <input type="number" name="txtn1" id="txtn1"> </br>
@@ -46,9 +49,22 @@
         <div id="res">
             <h2 id="resul"></h2>
         </div></br>
-
-
     </div>
+    <footer>
+
+        <p>Informações adicionais do Projeto</p>
+
+        <nav id="rodape">
+
+            <ul>
+                <li><a href="#">Fonte</a></li>
+                <li><a href="https://github.com/Pedrozaquieu" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/pedro-henrique-zaquieu-ribeiro-de-souza-a12927224/" target="_blank">Linkedin</a></li>   
+                <li><a href="#top">Inicio</a></li>             
+            </ul>
+
+        </nav>
+    </footer>
     <script src="js/setup.js"></script>
 
 </body>

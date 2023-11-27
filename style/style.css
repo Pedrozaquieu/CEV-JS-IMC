@@ -2,7 +2,60 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+body {
+    padding-top: 0.4px;
+    background:white;
+}
+nav#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: teal;
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    width: 100%;
+    
+
+}
+
+#logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 4rem;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 4rem;
+}
+
+#nav-links li {
+    list-style: none;
+}
+
+#nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+#nav-links a:hover:not(.active) {
+    background-color: lightseagreen;
+}
+
+#nav-links li a.active {
+    background-color: #4caf50;
 }
 
 div#body-text {
@@ -12,18 +65,24 @@ div#body-text {
     justify-content: center;
     margin-top: 250px;
     margin-bottom: 250px;
+    position: relative;
 }
+/* #imagem-imc{
+    position: abslute;    
+}
+#texto-imagem{
+    position: absolute;
+    font-size: 32px;
+    left: 250px;
+    top: 135px;
+} */
+
 
 h1 {
     color: #2f6a87;
     font-family: 'Trebuchet MS', 'Luecida Sans Unicode', 'Lucieda Grande', 'Lucidea23ns', Arial, sans-serif;
-    margin-left: -23px;
-}
-
-body {
-    background:white;
-
-
+    margin-bottom: 20px;
+    
 }
 
 input#txtn1 {
@@ -64,6 +123,9 @@ h2#alt {
 div#imc {
     text-align: center;
     display: block;
+    margin-bottom: 250px;
+    background-color: aliceblue;
+    
 
 }
 
@@ -125,46 +187,32 @@ h2#categoria {
     display: inline-block;
     margin-right: 40px;
 }
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
+footer{    
     background-color: teal;
-    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-#logo{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-
-#nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-#nav-links li {
+footer ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
+    
 }
-
-#nav-links a {
-    color: white;
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer a{
+    color: #ffffff;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 14px 16px;
+    margin:none;
+}
+footer p{
+    margin-bottom: 10px;
+    font-size: 19px;
 }
 
-#nav-links a:hover:not(.active) {
-    background-color: lightseagreen;
-}
 
-#nav-links li a.active {
-    background-color: #4caf50;
-}
