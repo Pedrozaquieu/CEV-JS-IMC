@@ -34,6 +34,7 @@ function limpar() {
     document.getElementById('txtn1').value = '';
     document.getElementById('txtn2').value = '';
     res.innerHTML = ''
+    categoria.innerHTML = ''
 
 }
 

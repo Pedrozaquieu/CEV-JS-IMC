@@ -19,37 +19,42 @@
         <ul id="nav-links">
             <li><a href="#top">Inicio</a></li>
             <li><a href="#body-text">Artigos</a></li>
-            <li><a id="active" href="#imc">Calculadora</a></li>
+            <li><a id="active" href="#s-imc">Calculadora</a></li>
             <li><a href="#rodape">Contato</a></li>
         </ul>
 
     </nav>
 
-    <!-- <div id="body-text">
-        <img id="imagem-imc" src="img/imc-img.png" alt="imagem descritiva de diferentes corpos e seus IMCs">
-        <h2 id="texto-imagem">Descobra o que é e qual seu IMC</h2>
-    </div> -->
+    <section id="artigo">
+                
+            <!-- <div id="txt-titulo-artigo">
+                <h1>IMC</h1>
+            </div>
+            <h2 id="texto-imagem">Entenda o que é IMC e como calcular o seu.</h2> -->
+        
+    </section>
 
 
+    <section id="s-imc">
+        <div id="imc">
+            <h1> </h1></br>
+            <h1></h1></br>
+            <h1 id="d-imc">DESCUBRA SEU IMC:</h1>
+            <p id="peso">Escreva seu peso em KG</p></br>
+            <input type="number" name="txtn1" id="txtn1"> </br>
 
-    <div id="imc">
-        <h1> </h1></br>
-        <h1></h1></br>
-        <h1>DESCUBRA SEU IMC:</h1>
-        <p id="peso">Escreva seu peso em KG</p></br>
-        <input type="number" name="txtn1" id="txtn1"> </br>
+            <h2 id="alt">Escreva sua altura (Ex:1,72)</h2></br>
+            <input type="number" name="txtn2" id="txtn2"></br>
 
-        <h2 id="alt">Escreva sua altura (Ex:1,72)</h2></br>
-        <input type="number" name="txtn2" id="txtn2"></br>
+            <input type="button" value="calcular" onclick="somar()" id="soma">
 
-        <input type="button" value="calcular" onclick="somar()" id="soma">
-
-        <input type="button" value="limpar" onclick="limpar()" id="limpa"><br>
-        <h2 id="categoria"></h2>
-        <div id="res">
-            <h2 id="resul"></h2>
-        </div></br>
-    </div>
+            <input type="button" value="limpar" onclick="limpar()" id="limpa"><br>
+            <h2 id="categoria"></h2>
+            <div id="res">
+                <h2></h2>
+            </div></br>
+        </div>
+    </section>
     <footer>
 
         <p>Informações adicionais do Projeto</p>
@@ -59,8 +64,9 @@
             <ul>
                 <li><a href="#">Fonte</a></li>
                 <li><a href="https://github.com/Pedrozaquieu" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/pedro-henrique-zaquieu-ribeiro-de-souza-a12927224/" target="_blank">Linkedin</a></li>   
-                <li><a href="#top">Inicio</a></li>             
+                <li><a href="https://www.linkedin.com/in/pedro-henrique-zaquieu-ribeiro-de-souza-a12927224/"
+                        target="_blank">Linkedin</a></li>
+                <li><a href="#top">Inicio</a></li>
             </ul>
 
         </nav>

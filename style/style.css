@@ -58,15 +58,15 @@ nav#menu {
     background-color: #4caf50;
 }
 
-div#body-text {
+/* div#body-text {
     display: flex;
     font-family: 'Trebuchet MS';
     align-items: center;
     justify-content: center;
     margin-top: 250px;
-    margin-bottom: 250px;
-    position: relative;
-}
+    margin-bottom: 250px;    
+    
+} */
 /* #imagem-imc{
     position: abslute;    
 }
@@ -76,9 +76,35 @@ div#body-text {
     left: 250px;
     top: 135px;
 } */
+section#s-imc {
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(19, 19, 19);
+    
+}
+section#artigo{    
+    padding: 15px;
+    margin-bottom: 15px;    
+    width: 500px;
+    display: flex;
+    font-family: 'Trebuchet MS';
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 250px; 
+    
+    
+}
+#txt-titulo-artigo{
+     padding: 15px;
+     justify-content: left;
+     font: bold 40px 'Trebuchet MS';
+}
 
-
-h1 {
+h1#d-imc {
     color: #2f6a87;
     font-family: 'Trebuchet MS', 'Luecida Sans Unicode', 'Lucieda Grande', 'Lucidea23ns', Arial, sans-serif;
     margin-bottom: 20px;
